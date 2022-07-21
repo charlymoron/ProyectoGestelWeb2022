@@ -1,0 +1,47 @@
+﻿<Properties StartupConfiguration="{BECC6228-17AD-4414-A29A-DCDC583B1793}|Default">
+  <MultiItemStartupConfigurations />
+  <Debugger.DebugSourceFolders />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Dominio/Profile/ClienteProfile.cs">
+    <Files>
+      <File FileName="api/Program.cs" Line="41" Column="2" />
+      <File FileName="Servicios/Implem/Servicio.cs" Line="54" Column="1" />
+      <File FileName="Dominio/Model/Entidad.cs" Line="9" Column="9" />
+      <File FileName="Dominio/Contracts/IVisible.cs" Line="6" Column="9" />
+      <File FileName="api/Controllers/ClienteController.cs" Line="32" Column="18" />
+      <File FileName="api/Controllers/TipoEventoController.cs" Line="30" Column="9" />
+      <File FileName="Dominio/DTO/ClienteDTO.cs" Line="23" Column="1" />
+      <File FileName="Dominio/Profile/ClienteProfile.cs" Line="32" Column="2" />
+      <File FileName="Dominio/Model/Cliente.cs" Line="19" Column="9" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="ProyectoGestelWeb2022" expanded="True">
+            <Node name="api" expanded="True">
+              <Node name="Controllers" expanded="True" />
+            </Node>
+            <Node name="Dominio" expanded="True">
+              <Node name="Contracts" expanded="True" />
+              <Node name="DTO" expanded="True" />
+              <Node name="Model" expanded="True" />
+              <Node name="Profile" expanded="True" />
+            </Node>
+            <Node name="Servicios" expanded="True">
+              <Node name="Contracts" expanded="True" />
+              <Node name="Implem" expanded="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+      <Pad Id="MonoDevelop.Debugger.WatchPad">
+        <State />
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.api PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+</Properties>

@@ -1,0 +1,13 @@
+/Users/cmoron/Projects/ProyectoGestelWeb2022/LoggerService/bin/Debug/netcoreapp3.1/LoggerService.deps.json
+/Users/cmoron/Projects/ProyectoGestelWeb2022/LoggerService/bin/Debug/netcoreapp3.1/LoggerService.dll
+/Users/cmoron/Projects/ProyectoGestelWeb2022/LoggerService/bin/Debug/netcoreapp3.1/LoggerService.pdb
+/Users/cmoron/Projects/ProyectoGestelWeb2022/LoggerService/bin/Debug/netcoreapp3.1/Contracts.dll
+/Users/cmoron/Projects/ProyectoGestelWeb2022/LoggerService/bin/Debug/netcoreapp3.1/Contracts.pdb
+/Users/cmoron/Projects/ProyectoGestelWeb2022/LoggerService/obj/Debug/netcoreapp3.1/LoggerService.csproj.AssemblyReference.cache
+/Users/cmoron/Projects/ProyectoGestelWeb2022/LoggerService/obj/Debug/netcoreapp3.1/LoggerService.GeneratedMSBuildEditorConfig.editorconfig
+/Users/cmoron/Projects/ProyectoGestelWeb2022/LoggerService/obj/Debug/netcoreapp3.1/LoggerService.AssemblyInfoInputs.cache
+/Users/cmoron/Projects/ProyectoGestelWeb2022/LoggerService/obj/Debug/netcoreapp3.1/LoggerService.AssemblyInfo.cs
+/Users/cmoron/Projects/ProyectoGestelWeb2022/LoggerService/obj/Debug/netcoreapp3.1/LoggerService.csproj.CoreCompileInputs.cache
+/Users/cmoron/Projects/ProyectoGestelWeb2022/LoggerService/obj/Debug/netcoreapp3.1/LoggerService.csproj.CopyComplete
+/Users/cmoron/Projects/ProyectoGestelWeb2022/LoggerService/obj/Debug/netcoreapp3.1/LoggerService.dll
+/Users/cmoron/Projects/ProyectoGestelWeb2022/LoggerService/obj/Debug/netcoreapp3.1/LoggerService.pdb

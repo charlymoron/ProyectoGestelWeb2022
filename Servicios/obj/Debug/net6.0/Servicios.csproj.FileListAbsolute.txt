@@ -1,0 +1,15 @@
+/Users/cmoron/Projects/ProyectoGestelWeb2022/Servicios/bin/Debug/net6.0/Servicios.deps.json
+/Users/cmoron/Projects/ProyectoGestelWeb2022/Servicios/bin/Debug/net6.0/Servicios.dll
+/Users/cmoron/Projects/ProyectoGestelWeb2022/Servicios/bin/Debug/net6.0/Servicios.pdb
+/Users/cmoron/Projects/ProyectoGestelWeb2022/Servicios/bin/Debug/net6.0/Dominio.dll
+/Users/cmoron/Projects/ProyectoGestelWeb2022/Servicios/bin/Debug/net6.0/Dominio.pdb
+/Users/cmoron/Projects/ProyectoGestelWeb2022/Servicios/obj/Debug/net6.0/Servicios.csproj.AssemblyReference.cache
+/Users/cmoron/Projects/ProyectoGestelWeb2022/Servicios/obj/Debug/net6.0/Servicios.GeneratedMSBuildEditorConfig.editorconfig
+/Users/cmoron/Projects/ProyectoGestelWeb2022/Servicios/obj/Debug/net6.0/Servicios.AssemblyInfoInputs.cache
+/Users/cmoron/Projects/ProyectoGestelWeb2022/Servicios/obj/Debug/net6.0/Servicios.AssemblyInfo.cs
+/Users/cmoron/Projects/ProyectoGestelWeb2022/Servicios/obj/Debug/net6.0/Servicios.csproj.CoreCompileInputs.cache
+/Users/cmoron/Projects/ProyectoGestelWeb2022/Servicios/obj/Debug/net6.0/Servicios.csproj.CopyComplete
+/Users/cmoron/Projects/ProyectoGestelWeb2022/Servicios/obj/Debug/net6.0/Servicios.dll
+/Users/cmoron/Projects/ProyectoGestelWeb2022/Servicios/obj/Debug/net6.0/refint/Servicios.dll
+/Users/cmoron/Projects/ProyectoGestelWeb2022/Servicios/obj/Debug/net6.0/Servicios.pdb
+/Users/cmoron/Projects/ProyectoGestelWeb2022/Servicios/obj/Debug/net6.0/ref/Servicios.dll
