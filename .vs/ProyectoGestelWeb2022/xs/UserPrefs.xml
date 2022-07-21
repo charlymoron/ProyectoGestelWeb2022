@@ -1,31 +1,51 @@
 ﻿<Properties StartupConfiguration="{BECC6228-17AD-4414-A29A-DCDC583B1793}|Default">
-  <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
-  </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MultiItemStartupConfigurations />
   <Debugger.DebugSourceFolders />
-  <MonoDevelop.Ide.ItemProperties.api PreferredExecutionTarget="/Applications/Google Chrome.app" />
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Dominio/Profile/ClienteProfile.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Dominio/Profile/TipoIdentificadorProfile.cs">
     <Files>
       <File FileName="api/Program.cs" Line="41" Column="2" />
       <File FileName="Servicios/Implem/Servicio.cs" Line="54" Column="1" />
       <File FileName="Dominio/Model/Entidad.cs" Line="9" Column="9" />
       <File FileName="Dominio/Contracts/IVisible.cs" Line="6" Column="9" />
-      <File FileName="api/Controllers/TipoEventoController.cs" Line="30" Column="9" />
+      <File FileName="api/Controllers/TipoEventoController.cs" Line="35" Column="37" />
       <File FileName="Dominio/DTO/ClienteDTO.cs" Line="23" Column="1" />
-      <File FileName="Dominio/Profile/ClienteProfile.cs" Line="32" Column="2" />
+      <File FileName="Dominio/Profile/ClienteProfile.cs" Line="21" Column="74" />
+      <File FileName="Servicios/Implem/TipoEventoServicio.cs" Line="22" Column="2" />
+      <File FileName="api/Controllers/TipoIdentificadorController.cs" Line="39" Column="31" />
+      <File FileName="Dominio/Model/TipoIdentificador.cs" Line="15" Column="51" />
+      <File FileName="Dominio/Model/TipoObjeto.cs" Line="7" Column="46" />
+      <File FileName="Dominio/Model/TipoEstadistica.cs" Line="6" Column="51" />
+      <File FileName="Dominio/Model/Provincium.cs" Line="6" Column="46" />
+      <File FileName="Dominio/Model/Proveedor.cs" Line="1" Column="1" />
+      <File FileName="Dominio/Model/OperadorRegistro.cs" Line="1" Column="1" />
+      <File FileName="Dominio/Model/Objeto.cs" Line="1" Column="1" />
+      <File FileName="Dominio/Model/Mantenedor.cs" Line="23" Column="6" />
+      <File FileName="Dominio/Model/IdentificadorObjeto.cs" Line="1" Column="1" />
+      <File FileName="Dominio/Model/GestelWeb2014Context.cs" Line="45" Column="9" />
+      <File FileName="Dominio/Model/Evento.cs" Line="1" Column="1" />
+      <File FileName="Dominio/Model/Estadistica.cs" Line="1" Column="1" />
+      <File FileName="Dominio/Model/Enlace.cs" Line="1" Column="1" />
+      <File FileName="Dominio/Model/Edificio.cs" Line="1" Column="1" />
+      <File FileName="Dominio/Model/Dominio.cs" Line="1" Column="1" />
+      <File FileName="Dominio/Model/DetalleEstadisticaPorEnlace.cs" Line="1" Column="1" />
+      <File FileName="Dominio/Model/DetalleEstadistica.cs" Line="1" Column="1" />
+      <File FileName="Dominio/Model/ArchivosImportado.cs" Line="1" Column="1" />
+      <File FileName="Dominio/DTO/TipoIdentificadorDTO.cs" Line="12" Column="1" />
+      <File FileName="Dominio/Profile/TipoIdentificadorProfile.cs" Line="19" Column="1" />
+      <File FileName="api/Controllers/ClienteController.cs" Line="37" Column="31" />
+      <File FileName="Dominio/DTO/TipoEventoDTO.cs" Line="8" Column="1" />
+      <File FileName="Dominio/Profile/TipoEventoProfile.cs" Line="12" Column="52" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
-          <Node name="ProyectoGestelWeb2022" expanded="True">
+          <Node name="ProyectoGestelWeb2022" expanded="True" selected="True">
             <Node name="api" expanded="True">
               <Node name="Controllers" expanded="True" />
             </Node>
             <Node name="Dominio" expanded="True">
-              <Node name="DTO" expanded="True" selected="True" />
+              <Node name="DTO" expanded="True" />
+              <Node name="Model" expanded="True" />
               <Node name="Profile" expanded="True" />
             </Node>
             <Node name="Servicios" expanded="True">
@@ -40,4 +60,10 @@
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.ItemProperties.api PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
 </Properties>

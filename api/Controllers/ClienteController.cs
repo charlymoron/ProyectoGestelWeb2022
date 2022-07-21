@@ -32,11 +32,6 @@ namespace api.Controllers
         [HttpGet]
         public IActionResult Index()
         {
-            //Cliente cliente = _clienteServicio.GetAll().First();
-            //var result = _mapper.Map<ClienteDTO>(cliente);
-            //return Ok(result);
-
-
             var lista = _clienteServicio.GetAll();
             var result = _mapper.Map<IEnumerable<ClienteDTO>>(lista);
             return Ok(result);

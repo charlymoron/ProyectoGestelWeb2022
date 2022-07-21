@@ -4,8 +4,8 @@ using System.Collections.Generic;
 
 namespace Dominio.Model
 {
-    public partial class TipoObjeto
-    {
+    public partial class TipoObjeto : Entidad
+    { 
         public TipoObjeto()
         {
             Objetos = new HashSet<Objeto>();

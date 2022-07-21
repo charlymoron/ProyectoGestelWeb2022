@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace Dominio.Model
 {
-    public partial class TipoIdentificador
+    public partial class TipoIdentificador : Entidad
     {
         public TipoIdentificador()
         {

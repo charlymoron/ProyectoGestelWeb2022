@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using AutoMapper;
 using Microsoft.AspNetCore.Mvc;
 using Servicios.Contracts;
 using Servicios.Implem;
@@ -19,11 +20,13 @@ namespace api.Controllers
     public class TipoEventoController : Controller
     {
         private readonly ITipoEventoServicio _tipoEventoServicio;
+        private IMapper _mapper;
 
-
-        public TipoEventoController(ITipoEventoServicio tipoEventoServicio)
+        public TipoEventoController(ITipoEventoServicio tipoEventoServicio, IMapper mapper)
         {
             _tipoEventoServicio = tipoEventoServicio;
+            _mapper = mapper;
+                 
         }
 
         // GET: /<controller>/
@@ -31,8 +34,8 @@ namespace api.Controllers
         public IActionResult Index()
         {
             var lista = _tipoEventoServicio.GetAll();
-            return Ok(lista);
-
+            var result = _mapper.Map<IEnumerable<TipoEventoDTO>>(lista);
+            return Ok(result);
 
         }
     }
