@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Linq.Expressions;
 using Dominio.Model;
 
 namespace Servicios.Contracts
@@ -7,7 +8,7 @@ namespace Servicios.Contracts
     {
         T Get(long id);
         IList<T> GetAll();
-
+       // IList<T> GetAllItems(Expression<Func<T, bool>> predicate);
         void Create(T item);
         void Update(T item);
         void Delete(long id);

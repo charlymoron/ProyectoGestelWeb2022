@@ -33,8 +33,10 @@ namespace api.Controllers
         {
             var lista = _detalleEstadisticaServicio.GetDetalleEstadisticaPorEnlaceId(Id);
 
-            var result = _mapper.Map<IEnumerable<DetalleEstadisticaPorEnlaceDTO>>(lista);
-            return Ok(result);
+          // var result = _mapper.Map<IEnumerable<DetalleEstadisticaPorEnlaceDTO>>(lista);
+
+
+            return Ok(lista);
 
         }
     }

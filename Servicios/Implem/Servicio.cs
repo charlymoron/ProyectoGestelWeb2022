@@ -54,6 +54,13 @@ namespace Servicios.Implem
             return GetAllItems().ToList();
         }
 
+
+        
+
+
+        
+        
+
         public void Update(T item)
         {
             try
@@ -76,12 +83,11 @@ namespace Servicios.Implem
         protected IQueryable<T> GetAllItems(Expression<Func<T, bool>> predicate)
         {
             var query = _repositorio.FindAll();
-            //bool hayColumnaVisible = typeof(T).GetInterfaces().Contains(typeof(IVisible));
-            //query = hayColumnaVisible ? query.Where(t => t.visible) : query;
+           
             return predicate != null ? query.Where(predicate) : query;         
         }
 
-
+        
     }
 }
 

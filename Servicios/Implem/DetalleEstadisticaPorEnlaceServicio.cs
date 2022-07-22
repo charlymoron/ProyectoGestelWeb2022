@@ -17,7 +17,7 @@ namespace Servicios.Implem
 
         public IEnumerable<DetalleEstadisticaPorEnlace> GetDetalleEstadisticaPorEnlaceId(long Id)
         {
-            var lista = _repositorio.FindByCondition(u => u.EnlaceId == Id).AsEnumerable();
+            IEnumerable<DetalleEstadisticaPorEnlace>? lista = GetAllItems(u => u.EnlaceId == Id).ToList();
 
             return lista;
 
