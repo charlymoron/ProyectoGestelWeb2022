@@ -42,6 +42,7 @@ namespace api.Controllers
         }
 
         [HttpGet]
+        [Route("api/getpage")]
         public IActionResult GetPage([FromQuery] ParametersGrid param)
         {
             var lista = _detalleEstadisticaServicio.GetPage(param);
