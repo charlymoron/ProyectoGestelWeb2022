@@ -9,10 +9,12 @@
   <ItemGroup>
     <None Remove="Contracts\" />
     <None Remove="Implem\" />
+    <None Remove="Helpers\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Contracts\" />
     <Folder Include="Implem\" />
+    <Folder Include="Helpers\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Dominio\Dominio.csproj" />
