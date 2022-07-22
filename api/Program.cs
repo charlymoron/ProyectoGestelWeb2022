@@ -30,7 +30,6 @@ builder.Services.AddScoped(typeof(IServicio<>), typeof(Servicio<>));
 builder.Services.AddScoped(typeof(IRepositorioBase<>), typeof(RepositorioBase<>));
 builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
 
-
 builder.Services.AddScoped<ITipoEventoServicio, TipoEventoServicio>();
 builder.Services.AddScoped<IDetalleEstadisticaServicio, DetalleEstadisticaServicio>();
 
