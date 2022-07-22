@@ -7,7 +7,7 @@ namespace Servicios.Contracts
     public interface IDetalleEstadisticaServicio : IServicio<DetalleEstadistica>
     {
 
-        IEnumerable<DetalleEstadistica> GetOwners(ParametersGrid params);
+        IEnumerable<DetalleEstadistica> GetPage(ParametersGrid parametros);
 
     }
 }
