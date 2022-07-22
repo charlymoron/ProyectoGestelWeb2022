@@ -50,6 +50,16 @@ namespace api.Controllers
             return Ok(lista);
 
         }
+
+        [HttpGet]
+        [Route("api/getdetalleEstadistica")]
+        public IActionResult GetDetalleEstadisticaPorEstadistica(long Id)
+        {
+            var lista = _detalleEstadisticaServicio.GetDetalleEstadisticaPorEstadisticaId(Id);
+            var result = _mapper.Map<IEnumerable<DetalleEstadisticaDTO>>(lista);
+            return Ok(result);
+
+        }
     }
 }
 

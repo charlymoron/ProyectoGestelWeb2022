@@ -16,7 +16,7 @@ namespace Servicios.Implem
 
         public string GetNameClase()
         {
-            return "TipoEventoServicio";
+            return "";
         }
     }
 }

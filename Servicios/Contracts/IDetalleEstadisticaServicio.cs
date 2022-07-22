@@ -9,6 +9,8 @@ namespace Servicios.Contracts
 
         IEnumerable<DetalleEstadistica> GetPage(ParametersGrid parametros);
 
+        IEnumerable<DetalleEstadistica> GetDetalleEstadisticaPorEstadisticaId(long Id);
+
     }
 }
 

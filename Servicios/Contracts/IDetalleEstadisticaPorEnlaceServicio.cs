@@ -6,9 +6,9 @@ namespace Servicios.Contracts
     public interface IDetalleEstadisticaPorEnlaceServicio : IServicio<DetalleEstadisticaPorEnlace>
     {
 
-
-
         IEnumerable<DetalleEstadisticaPorEnlace> GetDetalleEstadisticaPorEnlaceId(long Id);
+
+        
 
     }
 }
