@@ -19,6 +19,7 @@
     <None Remove="Profile\" />
     <None Remove="AutoMapper" />
     <None Remove="System.Configuration.ConfigurationManager" />
+    <None Remove="Model\Extensions\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Model\" />
@@ -26,6 +27,7 @@
     <Folder Include="Impl\" />
     <Folder Include="DTO\" />
     <Folder Include="Profile\" />
+    <Folder Include="Model\Extensions\" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="6.0.7" />
