@@ -53,13 +53,7 @@ namespace Servicios.Implem
         {
             return GetAllItems().ToList();
         }
-
-
-        
-
-
-        
-        
+     
 
         public void Update(T item)
         {
