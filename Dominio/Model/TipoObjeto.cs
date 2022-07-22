@@ -4,7 +4,7 @@ using System.Collections.Generic;
 
 namespace Dominio.Model
 {
-    public partial class TipoObjeto : Entidad
+    public partial class TipoObjeto 
     { 
         public TipoObjeto()
         {

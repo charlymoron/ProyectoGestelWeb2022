@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace Dominio.Model
 {
-    public partial class OperadorRegistro : Entidad
+    public partial class OperadorRegistro 
     {
         public OperadorRegistro()
         {

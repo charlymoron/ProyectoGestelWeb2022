@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace Dominio.Model
 {
-    public partial class Evento : Entidad
+    public partial class Evento 
     {
         public long Id { get; set; }
         public long ObjetoId { get; set; }

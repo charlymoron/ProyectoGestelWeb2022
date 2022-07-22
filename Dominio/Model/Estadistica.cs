@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace Dominio.Model
 {
-    public partial class Estadistica : Entidad
+    public partial class Estadistica 
     {
         public Estadistica()
         {

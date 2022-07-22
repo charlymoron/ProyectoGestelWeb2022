@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace Dominio.Model
 {
-    public partial class TipoEvento : Entidad
+    public partial class TipoEvento 
     {
         public TipoEvento()
         {

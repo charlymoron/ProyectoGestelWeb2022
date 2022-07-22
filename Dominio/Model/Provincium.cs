@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace Dominio.Model
 {
-    public partial class Provincium : Entidad
+    public partial class Provincium 
     {
         public Provincium()
         {

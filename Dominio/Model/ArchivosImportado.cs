@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace Dominio.Model
 {
-    public partial class ArchivosImportado : Entidad
+    public partial class ArchivosImportado 
     {
         public long Id { get; set; }
         public long ClienteId { get; set; }

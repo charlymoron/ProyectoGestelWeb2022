@@ -4,7 +4,7 @@ using Dominio.Model;
 
 namespace Dominio.Model
 {
-    public partial class Mantenedor : Entidad
+    public partial class Mantenedor 
     {
         public Mantenedor()
         {

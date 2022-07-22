@@ -17,9 +17,7 @@ namespace Servicios.Implem
 
         public IEnumerable<DetalleEstadisticaPorEnlace> GetDetalleEstadisticaPorEnlaceId(long Id)
         {
-            var lista = GetAllItems(u => u.EnlaceId == Id);
-
-        
+            var lista = GetAllItems(u => u.EnlaceId == Id);        
             return lista.ToList();
 
         }
