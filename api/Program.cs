@@ -32,7 +32,7 @@ builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
 
 builder.Services.AddScoped<ITipoEventoServicio, TipoEventoServicio>();
 builder.Services.AddScoped<IDetalleEstadisticaServicio, DetalleEstadisticaServicio>();
-
+builder.Services.AddScoped<IDetalleEstadisticaPorEnlaceServicio, DetalleEstadisticaPorEnlaceServicio>();
 //builder.Services.AddAutoMapper(typeof(Program));
 
 builder.Services.AddAutoMapper(config =>
