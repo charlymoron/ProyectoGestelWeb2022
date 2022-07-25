@@ -22,18 +22,7 @@ var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 
-
-
-
-
-builder.Services.AddScoped(typeof(IServicio<>), typeof(Servicio<>));
-builder.Services.AddScoped(typeof(IRepositorioBase<>), typeof(RepositorioBase<>));
-builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
-
-builder.Services.AddScoped<ITipoEventoServicio, TipoEventoServicio>();
-builder.Services.AddScoped<IDetalleEstadisticaServicio, DetalleEstadisticaServicio>();
-builder.Services.AddScoped<IDetalleEstadisticaPorEnlaceServicio, DetalleEstadisticaPorEnlaceServicio>();
-//builder.Services.AddAutoMapper(typeof(Program));
+builder.Services.ConfigureServices();
 
 builder.Services.AddAutoMapper(config =>
 {
