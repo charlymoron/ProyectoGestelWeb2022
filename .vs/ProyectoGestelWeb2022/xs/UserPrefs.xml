@@ -12,24 +12,7 @@
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
-          <Node name="ProyectoGestelWeb2022" expanded="True">
-            <Node name="api" expanded="True">
-              <Node name="Controllers" expanded="True" />
-              <Node name="Extensions" expanded="True" />
-              <Node name="logs" expanded="True" />
-              <Node name="appsettings.json" expanded="True" />
-              <Node name="Program.cs" selected="True" />
-            </Node>
-            <Node name="Dominio" expanded="True">
-              <Node name="Impl" expanded="True" />
-              <Node name="Profile" expanded="True" />
-            </Node>
-            <Node name="Servicios" expanded="True">
-              <Node name="Contracts" expanded="True" />
-              <Node name="Helpers" expanded="True" />
-              <Node name="Implem" expanded="True" />
-            </Node>
-          </Node>
+          <Node name="ProyectoGestelWeb2022" expanded="True" selected="True" />
         </State>
       </Pad>
       <Pad Id="MonoDevelop.Debugger.WatchPad">
@@ -39,12 +22,12 @@
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
+  <MultiItemStartupConfigurations />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.ItemProperties.api PreferredExecutionTarget="/Applications/Google Chrome.app" />
-  <MultiItemStartupConfigurations />
-  <Debugger.DebugSourceFolders />
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <Debugger.DebugSourceFolders />
+  <MonoDevelop.Ide.ItemProperties.api PreferredExecutionTarget="/Applications/Google Chrome.app" />
 </Properties>
