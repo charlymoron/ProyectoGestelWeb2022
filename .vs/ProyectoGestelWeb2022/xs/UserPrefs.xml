@@ -1,21 +1,13 @@
 ﻿<Properties StartupConfiguration="{BECC6228-17AD-4414-A29A-DCDC583B1793}|Default">
-  <Debugger.DebugSourceFolders />
-  <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
-  </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.Workbench ActiveDocument="api/Program.cs">
     <Files>
-      <File FileName="Dominio/DTO/ClienteDTO.cs" Line="15" Column="9" />
-      <File FileName="Dominio/Profile/ArchivosImportadosProfile.cs" Line="14" Column="67" />
-      <File FileName="Dominio/Profile/ClienteProfile.cs" Line="1" Column="1" />
-      <File FileName="api/Controllers/ArchivosImportadosController.cs" Line="39" Column="6" />
-      <File FileName="Dominio/DTO/DetalleEstadisticaDTO.cs" Line="24" Column="1" />
-      <File FileName="api/Controllers/DetalleEstadisticaController.cs" Line="45" Column="28" />
-      <File FileName="Servicios/Helpers/ParametersGrid.cs" Line="6" Column="32" />
-      <File FileName="Servicios/Contracts/IDetalleEstadisticaServicio.cs" Line="15" Column="1" />
-      <File FileName="Servicios/Implem/DetalleEstadisticaServicio.cs" Line="17" Column="55" />
-      <File FileName="Servicios/Implem/TipoEventoServicio.cs" Line="15" Column="10" />
-      <File FileName="api/Program.cs" Line="35" Column="83" />
+      <File FileName="Servicios/Implem/TipoEventoServicio.cs" Line="19" Column="21" />
+      <File FileName="Servicios/Implem/DetalleEstadisticaServicio.cs" Line="21" Column="57" />
+      <File FileName="Servicios/Contracts/IDetalleEstadisticaPorEnlaceServicio.cs" Line="11" Column="9" />
+      <File FileName="Servicios/Contracts/IDetalleEstadisticaServicio.cs" Line="12" Column="88" />
+      <File FileName="api/Controllers/DetalleEstadisticaController.cs" Line="8" Column="32" />
+      <File FileName="api/Program.cs" Line="62" Column="27" />
+      <File FileName="api/Extensions/ServiceExtensions.cs" Line="37" Column="10" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -23,8 +15,15 @@
           <Node name="ProyectoGestelWeb2022" expanded="True">
             <Node name="api" expanded="True">
               <Node name="Controllers" expanded="True" />
+              <Node name="Extensions" expanded="True" />
+              <Node name="logs" expanded="True" />
+              <Node name="appsettings.json" expanded="True" />
+              <Node name="Program.cs" selected="True" />
             </Node>
-            <Node name="Dominio" expanded="True" />
+            <Node name="Dominio" expanded="True">
+              <Node name="Impl" expanded="True" />
+              <Node name="Profile" expanded="True" />
+            </Node>
             <Node name="Servicios" expanded="True">
               <Node name="Contracts" expanded="True" />
               <Node name="Helpers" expanded="True" />
@@ -34,12 +33,18 @@
         </State>
       </Pad>
       <Pad Id="MonoDevelop.Debugger.WatchPad">
-        <State />
+        <State>
+          <Value>StackTrace</Value>
+        </State>
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.ItemProperties.api PreferredExecutionTarget="/Applications/Google Chrome.app" />
   <MultiItemStartupConfigurations />
+  <Debugger.DebugSourceFolders />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
 </Properties>
