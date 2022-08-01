@@ -7,18 +7,20 @@ import { HeaderComponent } from './layout/header/header.component';
 import { FooterComponent } from './layout/footer/footer.component';
 import { SkeletonComponent } from './layout/skeleton/skeleton.component';
 import { LocationStrategy, PathLocationStrategy } from '@angular/common';
-import { HomeComponent } from './modules/home/home.component';
+//import { HomeComponent } from './modules/home/home.component';
+import { HomeModule } from './modules/home/home.module';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     FooterComponent,
-    SkeletonComponent,
-    HomeComponent
+    SkeletonComponent
+
   ],
   imports: [
     BrowserModule,
+    HomeModule,
     AppRoutingModule
   ],
   providers: [
