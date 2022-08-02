@@ -1,1 +1,21 @@
+<div class="container center">
 
+  <table class="table">
+    <thead>
+      <tr>
+        <td scope="col">Id</td>
+        <td scope="col">Razon Social</td>
+        <td scope="col">Activo</td>
+      </tr>
+    </thead>
+    <tbody>
+      <tr scope="row" *ngFor="let c of listaClientes">
+        <td>{{c.Id}}</td>
+        <td>{{c.RazonSocial}}</td>
+        <td>{{c.Activo}}</td>
+      </tr>
+    </tbody>
+
+  </table>
+
+</div>

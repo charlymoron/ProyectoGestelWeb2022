@@ -10,6 +10,8 @@ import { LocationStrategy, PathLocationStrategy } from '@angular/common';
 //import { HomeComponent } from './modules/home/home.component';
 import { HomeModule } from './modules/home/home.module';
 import { SharedModule } from './shared/shared.module';
+import { ClienteModule } from './modules/cliente/cliente.module';
+
 
 @NgModule({
   declarations: [
@@ -17,12 +19,12 @@ import { SharedModule } from './shared/shared.module';
     HeaderComponent,
     FooterComponent,
     SkeletonComponent
-
-  ],
+ ],
   imports: [
     BrowserModule,
     HttpClientModule,
     HomeModule,
+    ClienteModule,
     AppRoutingModule,
     SharedModule
   ],

@@ -14,13 +14,13 @@ import { ICliente } from '../../shared/models/ICliente';
 
 
 export class ClienteService {
-  rootURL = '/api';
+  rootURL = 'https://localhost:7176/api/v1/';
 
 
   constructor(private http : HttpClient) {  }
 
-  getClientes() {
-    return this.http.get(this.rootURL + '/cliente');
+  public getClientes() {
+    return this.http.get<ICliente[]>(this.rootURL + 'cliente');
   }
 
 

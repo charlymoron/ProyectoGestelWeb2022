@@ -13,7 +13,7 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-
+using Newtonsoft.Json.Serialization;
 using NLog;
 using Servicios.Contracts;
 using Servicios.Implem;
@@ -32,6 +32,8 @@ builder.Services.AddAutoMapper(config =>
 
 builder.Services.AddControllersWithViews();
 
+builder.Services.AddControllers().AddNewtonsoftJson(opt =>
+      { opt.SerializerSettings.ContractResolver = new DefaultContractResolver(); });
 
 //builder.Services.AddScoped<DbContext, GestelWeb2014Context>();
 
