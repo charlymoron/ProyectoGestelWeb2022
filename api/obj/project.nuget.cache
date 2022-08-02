@@ -1,12 +1,14 @@
 {
   "version": 2,
-  "dgSpecHash": "Pl5pZXZdLULi6RtWycxvLRi98c2LPLN/OfONA58eWQRY1ichbWmKZPEjOwDWp4LnCA/A1qWxloUaHadI9q2+pQ==",
+  "dgSpecHash": "fgFOAZ43np3ZU48N3o0Y1+0Bq2R6kFP2uM7cTmoxVdwuaTlC0YwQhPzaV3brYOjRf5dV7E/AzUQEZDZALS7g5w==",
   "success": true,
   "projectFilePath": "/Users/cmoron/Projects/ProyectoGestelWeb2022/api/api.csproj",
   "expectedPackageFiles": [
     "/Users/cmoron/.nuget/packages/automapper/11.0.1/automapper.11.0.1.nupkg.sha512",
     "/Users/cmoron/.nuget/packages/automapper.extensions.microsoft.dependencyinjection/11.0.0/automapper.extensions.microsoft.dependencyinjection.11.0.0.nupkg.sha512",
     "/Users/cmoron/.nuget/packages/humanizer.core/2.8.26/humanizer.core.2.8.26.nupkg.sha512",
+    "/Users/cmoron/.nuget/packages/microsoft.aspnetcore.mvc.versioning/5.0.0/microsoft.aspnetcore.mvc.versioning.5.0.0.nupkg.sha512",
+    "/Users/cmoron/.nuget/packages/microsoft.aspnetcore.mvc.versioning.apiexplorer/5.0.0/microsoft.aspnetcore.mvc.versioning.apiexplorer.5.0.0.nupkg.sha512",
     "/Users/cmoron/.nuget/packages/microsoft.csharp/4.7.0/microsoft.csharp.4.7.0.nupkg.sha512",
     "/Users/cmoron/.nuget/packages/microsoft.data.sqlclient/2.1.4/microsoft.data.sqlclient.2.1.4.nupkg.sha512",
     "/Users/cmoron/.nuget/packages/microsoft.data.sqlclient.sni.runtime/2.1.1/microsoft.data.sqlclient.sni.runtime.2.1.1.nupkg.sha512",

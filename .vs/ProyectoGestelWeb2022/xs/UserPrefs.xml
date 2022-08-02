@@ -3,22 +3,30 @@
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.api PreferredExecutionTarget="/Applications/Google Chrome.app" />
   <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.Workbench ActiveDocument="api/Program.cs">
+  <MonoDevelop.Ide.ItemProperties.api PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <Debugger.DebugSourceFolders />
+  <MonoDevelop.Ide.Workbench ActiveDocument="api/Extensions/ServiceExtensions.cs">
     <Files>
       <File FileName="Servicios/Implem/TipoEventoServicio.cs" Line="19" Column="21" />
       <File FileName="Servicios/Implem/DetalleEstadisticaServicio.cs" Line="21" Column="57" />
       <File FileName="Servicios/Contracts/IDetalleEstadisticaPorEnlaceServicio.cs" Line="11" Column="9" />
       <File FileName="Servicios/Contracts/IDetalleEstadisticaServicio.cs" Line="12" Column="88" />
       <File FileName="api/Controllers/DetalleEstadisticaController.cs" Line="8" Column="32" />
-      <File FileName="api/Program.cs" Line="62" Column="27" />
-      <File FileName="api/Extensions/ServiceExtensions.cs" Line="37" Column="10" />
+      <File FileName="api/Program.cs" Line="53" Column="1" />
+      <File FileName="api/Extensions/ServiceExtensions.cs" Line="68" Column="24" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
-          <Node name="ProyectoGestelWeb2022" expanded="True" selected="True" />
+          <Node name="ProyectoGestelWeb2022" expanded="True">
+            <Node name="api" expanded="True">
+              <Node name="Dependencies" expanded="True">
+                <Node name="PackageDependencies" expanded="True" />
+              </Node>
+              <Node name="Extensions" expanded="True" />
+            </Node>
+          </Node>
         </State>
       </Pad>
       <Pad Id="MonoDevelop.Debugger.WatchPad">
@@ -28,6 +36,5 @@
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <Debugger.DebugSourceFolders />
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
 </Properties>

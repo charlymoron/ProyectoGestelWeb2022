@@ -13,7 +13,10 @@ using Servicios.Contracts;
 
 namespace api.Controllers
 {
-    [Route("api/cliente")]
+     //[Route("api/cliente")]
+    
+    [ApiVersion("1.0")]
+    [Route("api/v{version:apiVersion}/cliente")]
     [ApiController]
     public class ClienteController : Controller
     {

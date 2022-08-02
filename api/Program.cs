@@ -38,6 +38,9 @@ builder.Services.AddControllersWithViews();
 builder.Services.ConfigureCors();
 builder.Services.ConfigureIISIntegration();
 builder.Services.ConfigureLoggerService();
+
+builder.Services.ConfigureVersioningService();
+
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
@@ -45,7 +48,6 @@ builder.Services.AddSwaggerGen();
 LogManager.LoadConfiguration(string.Concat(Directory.GetCurrentDirectory(), "/nlog.config"));
 
 builder.Services.AddDbContext<GestelWeb2014Context>(op => op.UseSqlServer(builder.Configuration.GetConnectionString("GestelWeb2014")));
-
 
 
 
