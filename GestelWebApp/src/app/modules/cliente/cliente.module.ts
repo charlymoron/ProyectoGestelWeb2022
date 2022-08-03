@@ -1,8 +1,8 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-
 import { ClienteRoutingModule } from './cliente-routing.module';
 import { ListaComponent } from './component/lista/lista.component';
+import { SharedModule } from 'src/app/shared/shared.module';
 
 
 @NgModule({
@@ -11,7 +11,8 @@ import { ListaComponent } from './component/lista/lista.component';
   ],
   imports: [
     CommonModule,
-    ClienteRoutingModule
+    ClienteRoutingModule,
+    SharedModule
   ],
   exports: []
 })

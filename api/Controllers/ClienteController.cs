@@ -38,8 +38,6 @@ namespace api.Controllers
             var lista = _clienteServicio.GetAll();
             var result = _mapper.Map<IEnumerable<ClienteDTO>>(lista);
             return Ok(result);
-
-
         }
     }
 }

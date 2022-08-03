@@ -7,11 +7,10 @@ import { HeaderComponent } from './layout/header/header.component';
 import { FooterComponent } from './layout/footer/footer.component';
 import { SkeletonComponent } from './layout/skeleton/skeleton.component';
 import { LocationStrategy, PathLocationStrategy } from '@angular/common';
-//import { HomeComponent } from './modules/home/home.component';
 import { HomeModule } from './modules/home/home.module';
 import { SharedModule } from './shared/shared.module';
 import { ClienteModule } from './modules/cliente/cliente.module';
-
+import { faFontAwesome } from '@fortawesome/free-brands-svg-icons';
 
 @NgModule({
   declarations: [

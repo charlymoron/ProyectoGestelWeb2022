@@ -1,15 +1,14 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { ICliente } from './models/ICliente';
+
+
 
 
 @NgModule({
-  declarations: [ ],
+  declarations: [  ],
   imports: [
     CommonModule
   ],
-  exports:[
-
-  ]
+  exports: [  ]
 })
 export class SharedModule { }

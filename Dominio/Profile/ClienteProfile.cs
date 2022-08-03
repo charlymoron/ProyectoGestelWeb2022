@@ -17,9 +17,10 @@ namespace Dominio.Profile
                 .ForMember(dest => dest.Id, cfg => cfg.MapFrom (s => s.Id.ToString()))
                 .ForMember(dest => dest.RazonSocial, cfg => cfg.MapFrom(s => s.RazonSocial))
                 .ForMember(dest => dest.Activo, cfg => cfg.MapFrom(s => s.Activo == 1 ? "SI" : "NO"))
-                .ForMember(dest => dest.FechaDeAlta, cfg => cfg.MapFrom(c => c.FechaDeAlta.ToString("dd/MM/yyyy")))
-                .ForMember(dest => dest.FechaDeBaja, cfg => cfg.Ignore());
+                .ForMember(dest => dest.FechaAlta, cfg => cfg.MapFrom(src => src.FechaDeAlta.ToString("dd/MM/yyyy")))
+                .ForMember(dest => dest.FechaBaja, cfg => cfg.Ignore());
         }
     }
 }
 
+// .ForMember(dest => dest.FechaDeAlta, cfg => cfg.MapFrom(c => c.FechaDeAlta))

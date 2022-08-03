@@ -1,21 +1,36 @@
-<div class="container center">
+<div class="container">
 
-  <table class="table">
-    <thead>
-      <tr>
-        <td scope="col">Id</td>
-        <td scope="col">Razon Social</td>
-        <td scope="col">Activo</td>
-      </tr>
-    </thead>
-    <tbody>
-      <tr scope="row" *ngFor="let c of listaClientes">
-        <td>{{c.Id}}</td>
-        <td>{{c.RazonSocial}}</td>
-        <td>{{c.Activo}}</td>
-      </tr>
-    </tbody>
 
-  </table>
+    <table class="table table-hover caption-top">
+      <caption>Nómina de Clientes</caption>
+      <thead class="table-light">
+        <tr>
+          <th scope="col">Id</th>
+          <th scope="col">Razon Social</th>
+          <th scope="col">Activo</th>
+          <th scope="col">Fecha de Alta</th>
+          <th scope="col">Fecha de Baja</th>
+          <th scope="col">Acciones</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr scope="row" *ngFor="let c of listaClientes">
+          <td>{{c.Id}}</td>
+          <td>{{c.RazonSocial}}</td>
+          <td>{{c.Activo}}</td>
+          <td>{{c.FechaAlta | date: 'dd/MM/yyyy'}}</td>
+          <td>{{c.FechaBaja }}</td>
+          <td>
+            <button type="button" class="btn btn-primary">Tablero de Control</button>
+          </td>
+        </tr>
+      </tbody>
+
+    </table>
 
 </div>
+
+
+<!-- <div class="container  text-center mt-5 mb-5">
+  <h1>Bootstrap 5 is working fine with Angular 13!!</h1>
+</div> -->

@@ -9,8 +9,8 @@ namespace Dominio.DTO
             public string? Id { get; set; }
             public string? RazonSocial { get; set; }
             public string? Activo { get; set; }
-            public DateTime FechaDeAlta { get; set; }
-            public DateTime? FechaDeBaja { get; set; }
+            public DateTime FechaAlta { get; set; }
+            public DateTime? FechaBaja { get; set; }
 
         
 
