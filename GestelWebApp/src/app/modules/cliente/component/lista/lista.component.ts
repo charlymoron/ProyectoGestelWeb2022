@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { ClienteService } from 'src/app/core/services/cliente.service';
 import { ICliente } from 'src/app/shared/models/ICliente';
 import { MessageService } from 'primeng/api';
@@ -13,11 +14,14 @@ import { MessageService } from 'primeng/api';
 export class ListaComponent implements OnInit {
 
   public listaClientes: ICliente[] = [];
-  selectedCliente: any = null;;
+   selectedCliente: any = null;;
    loading = false;
+   routerC : Router;
 
-  constructor(private clienteService : ClienteService ,  private messageService: MessageService) {
-
+  constructor(private clienteService : ClienteService ,
+    private router: Router,
+    private messageService: MessageService) {
+   this.routerC = router;
     this.isRowSelectable = this.isRowSelectable.bind(this);
   }
 
@@ -46,6 +50,14 @@ export class ListaComponent implements OnInit {
 
     // } );
   }
+
+  goDashboard(id: number) {
+     console.log(id);
+    this.routerC.navigateByUrl("/dashboard");
+  }
+
+
+
 
 
   selectCliente(cliente: ICliente) {

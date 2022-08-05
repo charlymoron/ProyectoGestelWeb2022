@@ -26,6 +26,9 @@ export class HeaderComponent implements OnInit {
       {
           label: 'Cliente',
           routerLink: '/cliente'
+      },
+      {
+        label: 'Administración'
       }
     ]
 

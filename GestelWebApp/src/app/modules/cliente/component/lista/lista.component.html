@@ -62,10 +62,11 @@
         <td>{{cliente.Id}}</td>
         <td>{{cliente.RazonSocial}}</td>
         <td>{{cliente.Activo}}</td>
-        <td>{{cliente.FechaAlta}}</td>
-        <td>{{cliente.FechaBaja}}</td>
+        <td>{{cliente.FechaAlta | date: 'dd/MM/yyyy'}}</td>
+        <td>{{cliente.FechaBaja | date: 'dd/MM/yyyy'}}</td>
         <td>
-          <button pButton type="button" label="Operaciones" class="p-button-outlined"  *ngIf="cliente.Activo == 'SI'"></button>
+          <button pButton type="button" label="Dashboard" class="p-button-outlined" (click)="goDashboard(cliente.Id)"
+            *ngIf="cliente.Activo == 'SI'"></button>
 
         </td>
       </tr>

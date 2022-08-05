@@ -18,6 +18,8 @@ import {ImageModule} from 'primeng/image';
 import {TableModule} from 'primeng/table';
 import {BreadcrumbModule} from 'primeng/breadcrumb';
 
+import { DashboardModule } from './modules/dashboard/dashboard.module';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -38,7 +40,8 @@ import {BreadcrumbModule} from 'primeng/breadcrumb';
     ButtonModule,
     TableModule,
     ImageModule,
-    BreadcrumbModule
+    BreadcrumbModule,
+    DashboardModule
   ],
   providers: [
     {
