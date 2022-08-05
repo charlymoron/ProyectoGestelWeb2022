@@ -1,4 +1,5 @@
-.custom{
 
-  margin-top: 200px
+th, td {
+  text-align: center;
+  width: 200px
 }

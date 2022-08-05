@@ -10,7 +10,13 @@ import { LocationStrategy, PathLocationStrategy } from '@angular/common';
 import { HomeModule } from './modules/home/home.module';
 import { SharedModule } from './shared/shared.module';
 import { ClienteModule } from './modules/cliente/cliente.module';
-import { faFontAwesome } from '@fortawesome/free-brands-svg-icons';
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import {MenubarModule} from 'primeng/menubar';
+import { InputTextModule } from 'primeng/inputtext';
+import { ButtonModule } from 'primeng/button';
+import {ImageModule} from 'primeng/image';
+import {TableModule} from 'primeng/table';
+import {BreadcrumbModule} from 'primeng/breadcrumb';
 
 @NgModule({
   declarations: [
@@ -21,11 +27,18 @@ import { faFontAwesome } from '@fortawesome/free-brands-svg-icons';
  ],
   imports: [
     BrowserModule,
+    BrowserAnimationsModule,
     HttpClientModule,
     HomeModule,
     ClienteModule,
     AppRoutingModule,
-    SharedModule
+    SharedModule,
+    MenubarModule,
+    InputTextModule,
+    ButtonModule,
+    TableModule,
+    ImageModule,
+    BreadcrumbModule
   ],
   providers: [
     {

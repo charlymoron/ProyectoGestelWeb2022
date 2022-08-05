@@ -1,6 +1,4 @@
-<div class="container">
-
-
+<!-- <div class="container">
     <table class="table table-hover caption-top">
       <caption>Nómina de Clientes</caption>
       <thead class="table-light">
@@ -28,9 +26,55 @@
 
     </table>
 
-</div>
+</div> -->
 
 
 <!-- <div class="container  text-center mt-5 mb-5">
   <h1>Bootstrap 5 is working fine with Angular 13!!</h1>
 </div> -->
+
+
+
+
+<div class="card" style="margin-top: 20px">
+  <p-table [value]="listaClientes" selectionMode="single" [(selection)]="selectedCliente" datakey="Id" [loading]="loading"
+    [metaKeySelection]="false"  responsiveLayout="scroll"  (onRowSelect)="onRowSelect($event)"
+    (onRowUnselect)="onRowUnselect($event)" [paginator]="true" [rows]="10" [showCurrentPageReport]="true"
+    [rowsPerPageOptions]="[10,25,50]"  currentPageReportTemplate="Registros {first} a {last} de {totalRecords}" >
+    <ng-template pTemplate="caption">
+      <div class="flex align-items-center justify-content-between">
+        Clientes
+
+      </div>
+    </ng-template>
+    <ng-template pTemplate="header">
+      <tr>
+        <th>Id</th>
+        <th>Razón Social</th>
+        <th>Activo</th>
+        <th>Fecha de Alta</th>
+        <th>Fecha de Baja</th>
+        <th>Acciones</th>
+      </tr>
+    </ng-template>
+    <ng-template pTemplate="body" let-cliente>
+      <tr [pSelectableRow]="cliente">
+        <td>{{cliente.Id}}</td>
+        <td>{{cliente.RazonSocial}}</td>
+        <td>{{cliente.Activo}}</td>
+        <td>{{cliente.FechaAlta}}</td>
+        <td>{{cliente.FechaBaja}}</td>
+        <td>
+          <button pButton type="button" label="Operaciones" class="p-button-outlined" [disabled] = "cliente.Activo == 'SI' ? '' : 'disabled'"   ></button>
+
+        </td>
+      </tr>
+    </ng-template>
+    <!-- <ng-template pTemplate="paginatorleft">
+      <p-button type="button" icon="pi pi-plus" styleClass="p-button-text"></p-button>
+  </ng-template>
+  <ng-template pTemplate="paginatorright">
+      <p-button type="button" icon="pi pi-cloud" styleClass="p-button-text"></p-button>
+  </ng-template> -->
+  </p-table>
+</div>

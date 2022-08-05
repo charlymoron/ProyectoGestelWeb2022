@@ -3,6 +3,11 @@ import { CommonModule } from '@angular/common';
 import { ClienteRoutingModule } from './cliente-routing.module';
 import { ListaComponent } from './component/lista/lista.component';
 import { SharedModule } from 'src/app/shared/shared.module';
+import { TableModule } from 'primeng/table';
+import { ButtonModule } from 'primeng/button';
+import {ToastModule} from 'primeng/toast';
+
+
 
 
 @NgModule({
@@ -12,7 +17,10 @@ import { SharedModule } from 'src/app/shared/shared.module';
   imports: [
     CommonModule,
     ClienteRoutingModule,
-    SharedModule
+    SharedModule,
+    TableModule,
+    ButtonModule,
+    ToastModule
   ],
   exports: []
 })
