@@ -65,12 +65,17 @@
         <td>{{cliente.FechaAlta}}</td>
         <td>{{cliente.FechaBaja}}</td>
         <td>
-          <button pButton type="button" label="Operaciones" class="p-button-outlined" [disabled] = "cliente.Activo == 'SI' ? '' : 'disabled'"   ></button>
+          <button pButton type="button" label="Operaciones" class="p-button-outlined"  *ngIf="cliente.Activo == 'SI'"></button>
 
         </td>
       </tr>
     </ng-template>
-    <!-- <ng-template pTemplate="paginatorleft">
+
+
+    <!--
+      [disabled] = "cliente.Activo == 'SI' ? '' : 'disabled'"
+
+      <ng-template pTemplate="paginatorleft">
       <p-button type="button" icon="pi pi-plus" styleClass="p-button-text"></p-button>
   </ng-template>
   <ng-template pTemplate="paginatorright">
