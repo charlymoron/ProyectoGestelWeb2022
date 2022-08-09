@@ -56,6 +56,9 @@ export class ListaComponent implements OnInit {
     this.routerC.navigateByUrl("/dashboard/"+id);
   }
 
+  edit(id: number) {
+    this.routerC.navigateByUrl("/cliente/"+id);
+  }
 
 
 
