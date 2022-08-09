@@ -6,13 +6,15 @@ import { SharedModule } from 'src/app/shared/shared.module';
 import { TableModule } from 'primeng/table';
 import { ButtonModule } from 'primeng/button';
 import {ToastModule} from 'primeng/toast';
+import { ClienteDetalleComponent } from './component/cliente-detalle/cliente-detalle.component';
 
 
 
 
 @NgModule({
   declarations: [
-    ListaComponent
+    ListaComponent,
+    ClienteDetalleComponent
   ],
   imports: [
     CommonModule,
