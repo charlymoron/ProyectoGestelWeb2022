@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-
+import { CardModule } from 'primeng/card';
 import { DashboardRoutingModule } from './dashboard-routing.module';
 
 
@@ -8,7 +8,8 @@ import { DashboardRoutingModule } from './dashboard-routing.module';
   declarations: [],
   imports: [
     CommonModule,
-    DashboardRoutingModule
+    DashboardRoutingModule,
+    CardModule
   ]
 })
 export class DashboardModule { }

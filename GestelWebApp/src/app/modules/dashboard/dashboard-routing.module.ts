@@ -5,7 +5,7 @@ import { DashboardComponent } from './dashboard.component';
 
 const routes: Routes = [
   {
-    path: 'dashboard', component: SkeletonComponent, children: [
+    path: 'dashboard/:id', component: SkeletonComponent, children: [
       {
         path: '', component: DashboardComponent
       }

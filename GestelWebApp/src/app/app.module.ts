@@ -17,15 +17,18 @@ import { ButtonModule } from 'primeng/button';
 import {ImageModule} from 'primeng/image';
 import {TableModule} from 'primeng/table';
 import {BreadcrumbModule} from 'primeng/breadcrumb';
-
 import { DashboardModule } from './modules/dashboard/dashboard.module';
+import { CardModule } from 'primeng/card';
+import {PanelModule} from 'primeng/panel';
+import { DashboardComponent } from './modules/dashboard/dashboard.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     FooterComponent,
-    SkeletonComponent
+    SkeletonComponent,
+    DashboardComponent
  ],
   imports: [
     BrowserModule,
@@ -33,6 +36,7 @@ import { DashboardModule } from './modules/dashboard/dashboard.module';
     HttpClientModule,
     HomeModule,
     ClienteModule,
+    DashboardModule,
     AppRoutingModule,
     SharedModule,
     MenubarModule,
@@ -41,7 +45,9 @@ import { DashboardModule } from './modules/dashboard/dashboard.module';
     TableModule,
     ImageModule,
     BreadcrumbModule,
-    DashboardModule
+    DashboardModule,
+    CardModule,
+    PanelModule
   ],
   providers: [
     {

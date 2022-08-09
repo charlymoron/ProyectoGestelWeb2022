@@ -52,8 +52,8 @@ export class ListaComponent implements OnInit {
   }
 
   goDashboard(id: number) {
-     console.log(id);
-    this.routerC.navigateByUrl("/dashboard");
+
+    this.routerC.navigateByUrl("/dashboard/"+id);
   }
 
 

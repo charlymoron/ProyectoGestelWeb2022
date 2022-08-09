@@ -39,6 +39,15 @@ namespace api.Controllers
             var result = _mapper.Map<IEnumerable<ClienteDTO>>(lista);
             return Ok(result);
         }
+
+        [HttpGet]
+        [Route("{id}")]
+        public IActionResult Get(string id)
+        {
+            var obj = _clienteServicio.Get(Convert.ToInt64(id));
+            var result = _mapper.Map<ClienteDTO>(obj);
+            return Ok(result);
+        }
     }
 }
 
