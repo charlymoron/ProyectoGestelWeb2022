@@ -1,5 +1,11 @@
-
-th, td {
+.p-datatable .p-datatable-thead > tr > th {
   text-align: center;
-  width: 200px
+
+}
+
+td {width: 200px;}
+
+.p-datatable .p-datatable-tbody > tr > td {
+  text-align: center;
+
 }

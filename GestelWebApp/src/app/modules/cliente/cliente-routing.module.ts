@@ -11,12 +11,10 @@ const routes: Routes = [
         path: '', component: ListaComponent
       },
       {
-        path:'cliente/:id', component: ClienteDetalleComponent
+        path:':id', component: ClienteDetalleComponent
       }
     ]
   }
-
-
 ];
 
 @NgModule({

@@ -28,7 +28,15 @@ export class HeaderComponent implements OnInit {
           routerLink: '/cliente'
       },
       {
-        label: 'Administración'
+        label: 'Administración',
+        items: [{
+          label: 'Tablas Referenciales',
+        //  icon: 'pi pi-fw pi-plus',
+          items: [
+                  {label: 'Tipo Estadistica'},
+                  {label: 'Tipo Objeto'},
+                 ]
+               }]
       }
     ]
 

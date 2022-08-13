@@ -29,11 +29,15 @@
         <td>{{cliente.FechaAlta | date: 'dd/MM/yyyy'}}</td>
         <td>{{cliente.FechaBaja | date: 'dd/MM/yyyy'}}</td>
         <td>
-          <button pButton type="button" label="Dashboard" class="p-button-outlined" (click)="goDashboard(cliente.Id)"
-            *ngIf="cliente.Activo == 'SI'"></button>
+          <!-- <button pButton type="button" label="Dashboard" class="p-button-outlined" (click)="goDashboard(cliente.Id)"
+            *ngIf="cliente.Activo == 'SI'"></button> -->
 
-            <button pButton type="button" label="Editar" class="p-button-outlined"
-            (click)="edit(cliente.Id)"   *ngIf="cliente.Activo == 'SI'"></button>
+            <!-- <button pButton type="button" label="Editar" class="p-button-outlined"
+            (click)="edit(cliente.Id)"   *ngIf="cliente.Activo == 'SI'"></button> -->
+
+            <button pButton type="button" title="Modificar" *ngIf="cliente.Activo == 'SI'" (click)="edit(cliente.Id)" icon="pi pi-pencil"   class="p-button-rounded p-button-outlined"></button>
+
+            <button pButton type="button" title="Dashboard" *ngIf="cliente.Activo == 'SI'" (click)="goDashboard(cliente.Id)" icon="pi-th-large"  class="p-button-rounded p-button-outlined"></button>
 
         </td>
       </tr>
