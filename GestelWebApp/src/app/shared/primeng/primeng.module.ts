@@ -8,6 +8,8 @@ import {BreadcrumbModule} from 'primeng/breadcrumb';
 import { CardModule } from 'primeng/card';
 import {PanelModule} from 'primeng/panel';
 import {MenubarModule} from 'primeng/menubar';
+import {ToolbarModule} from 'primeng/toolbar';
+
 
 
 @NgModule({
@@ -21,6 +23,7 @@ import {MenubarModule} from 'primeng/menubar';
     BreadcrumbModule,
     CardModule,
     PanelModule,
+    ToolbarModule,
     MenubarModule
   ],
   exports:[
@@ -31,8 +34,8 @@ import {MenubarModule} from 'primeng/menubar';
     BreadcrumbModule,
     CardModule,
     PanelModule,
-    MenubarModule
-
+    MenubarModule,
+    ToolbarModule
   ]
 })
 export class PrimengModule { }

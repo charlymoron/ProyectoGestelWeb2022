@@ -12,18 +12,8 @@ import { SharedModule } from './shared/shared.module';
 import { ClienteModule } from './modules/cliente/cliente.module';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import { DashboardModule } from './modules/dashboard/dashboard.module';
-
-// import {MenubarModule} from 'primeng/menubar';
-// import { InputTextModule } from 'primeng/inputtext';
-// import { ButtonModule } from 'primeng/button';
-// import {ImageModule} from 'primeng/image';
-// import {TableModule} from 'primeng/table';
-// import {BreadcrumbModule} from 'primeng/breadcrumb';
-
-// import { CardModule } from 'primeng/card';
-// import {PanelModule} from 'primeng/panel';
 import { DashboardComponent } from './modules/dashboard/dashboard.component';
-import { PrimengModule } from './shared/primeng/primeng.module';
+
 
 
 @NgModule({
@@ -43,8 +33,8 @@ import { PrimengModule } from './shared/primeng/primeng.module';
     DashboardModule,
     AppRoutingModule,
     SharedModule,
-    DashboardModule,
-    PrimengModule
+    DashboardModule
+
   ],
   providers: [
     {

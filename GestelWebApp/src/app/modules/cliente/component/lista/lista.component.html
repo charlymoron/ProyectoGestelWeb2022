@@ -1,45 +1,54 @@
-
-
 <div class="card" style="margin-top: 20px">
-  <p-table [value]="listaClientes" selectionMode="single" [(selection)]="selectedCliente" datakey="Id" [loading]="loading"
-    [metaKeySelection]="false"  responsiveLayout="scroll"  (onRowSelect)="onRowSelect($event)"
-    (onRowUnselect)="onRowUnselect($event)" [paginator]="true" [rows]="10" [showCurrentPageReport]="true"
-    [rowsPerPageOptions]="[10,25,50]"  currentPageReportTemplate="Registros {first} a {last} de {totalRecords}" >
-    <ng-template pTemplate="caption">
-      <div class="flex align-items-center justify-content-between">
-        Clientes
 
-      </div>
+  <p-table [value]="listaClientes" selectionMode="single" [(selection)]="selectedCliente" datakey="Id"
+    [loading]="loading" [metaKeySelection]="false" responsiveLayout="scroll" (onRowSelect)="onRowSelect($event)"
+    (onRowUnselect)="onRowUnselect($event)" [paginator]="true" [rows]="10" [showCurrentPageReport]="true"
+    [rowsPerPageOptions]="[10,25,50]" currentPageReportTemplate="Registros {first} a {last} de {totalRecords}">
+    <ng-template pTemplate="caption">
+
+      <p-toolbar styleClass="mb-4">
+        <ng-template pTemplate="left">
+           Administración de Clientes
+        </ng-template>
+        <ng-template pTemplate="right">
+          <button pButton  label="Nuevo" icon="pi pi-plus" ></button>
+          <button pButton pRipple label="Eliminar" icon="pi pi-trash"></button>
+          <button pButton pRipple label="Modificar" icon="pi pi-pencil"></button>
+          <!-- <i class="pi pi-bars"></i> -->
+          <button pButton pRipple label="Dashboard" (click)="goDashboardCliente(selectedCliente)"  icon="pi pi-th-large"></button>
+        </ng-template>
+      </p-toolbar>
     </ng-template>
+
     <ng-template pTemplate="header">
       <tr>
-        <th>Id</th>
+        <th style="width: 3rem; text-align: center;">
+          <!-- <p-tableHeaderCheckbox></p-tableHeaderCheckbox> -->
+        </th>
+        <!-- <th>Id</th> -->
         <th>Razón Social</th>
         <th>Activo</th>
         <th>Fecha de Alta</th>
         <th>Fecha de Baja</th>
-        <th>Acciones</th>
+        <!-- <th>Acciones</th> -->
       </tr>
     </ng-template>
     <ng-template pTemplate="body" let-cliente>
       <tr [pSelectableRow]="cliente">
-        <td>{{cliente.Id}}</td>
+
+      <td style="width: 3rem; text-align: center;">
+        <p-tableCheckbox [value]="cliente"></p-tableCheckbox>
+    </td>
+        <!-- <td>{{cliente.Id}}</td> -->
         <td>{{cliente.RazonSocial}}</td>
         <td>{{cliente.Activo}}</td>
         <td>{{cliente.FechaAlta | date: 'dd/MM/yyyy'}}</td>
         <td>{{cliente.FechaBaja | date: 'dd/MM/yyyy'}}</td>
-        <td>
-          <!-- <button pButton type="button" label="Dashboard" class="p-button-outlined" (click)="goDashboard(cliente.Id)"
-            *ngIf="cliente.Activo == 'SI'"></button> -->
+        <!-- <td>
+           <button pButton type="button" title="Dashboard" *ngIf="cliente.Activo == 'SI'"
+            (click)="goDashboard(cliente.Id)" icon="pi-th-large" class="p-button-rounded p-button-outlined"></button>
 
-            <!-- <button pButton type="button" label="Editar" class="p-button-outlined"
-            (click)="edit(cliente.Id)"   *ngIf="cliente.Activo == 'SI'"></button> -->
-
-            <button pButton type="button" title="Modificar" *ngIf="cliente.Activo == 'SI'" (click)="edit(cliente.Id)" icon="pi pi-pencil"   class="p-button-rounded p-button-outlined"></button>
-
-            <button pButton type="button" title="Dashboard" *ngIf="cliente.Activo == 'SI'" (click)="goDashboard(cliente.Id)" icon="pi-th-large"  class="p-button-rounded p-button-outlined"></button>
-
-        </td>
+        </td> -->
       </tr>
     </ng-template>
   </p-table>

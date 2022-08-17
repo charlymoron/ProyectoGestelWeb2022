@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { ClienteService } from 'src/app/core/services/cliente.service';
 import { ICliente } from 'src/app/shared/models/ICliente';
-import { MessageService } from 'primeng/api';
+import { MenuItem, MessageService } from 'primeng/api';
 
 @Component({
   selector: 'app-lista',
@@ -13,10 +13,17 @@ import { MessageService } from 'primeng/api';
 
 export class ListaComponent implements OnInit {
 
+  itemsMenu!: MenuItem[];
+
+
   public listaClientes: ICliente[] = [];
    selectedCliente: any = null;;
    loading = false;
    routerC : Router;
+
+
+
+
 
   constructor(private clienteService : ClienteService ,
     private router: Router,
@@ -26,13 +33,14 @@ export class ListaComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    this.loading = true;
-    // this.clienteService.getClientes().subscribe((data: ICliente[]) =>
-    //   {
-    //     this.listaClientes = data;
-    //     this.loading = false;
-    //   } );
+      this.loading = true;
 
+      this.itemsMenu = [
+        {
+          label: 'Nuevo',
+          icon: 'pi pi-fw pi-plus'
+        }
+      ];
 
       setTimeout(() => {
         this.clienteService.getClientes().subscribe((data: ICliente[]) =>
@@ -44,12 +52,12 @@ export class ListaComponent implements OnInit {
     }, 1000);
 
 
-    //  this.clienteService.getClientes().subscribe((data: ICliente[])=>{
-    //   this.listaClientes=data;
-    //   console.log(data);
-
-    // } );
   }
+
+ goDashboardCliente(idCliente: number)
+ {
+  this.routerC.navigateByUrl("/dashboard/"+idCliente);
+ }
 
   goDashboard(id: number) {
 
