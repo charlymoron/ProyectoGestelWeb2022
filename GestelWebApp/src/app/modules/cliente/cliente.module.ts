@@ -11,6 +11,7 @@ import { ClienteDetalleComponent } from './component/cliente-detalle/cliente-det
 
 
 
+
 @NgModule({
   declarations: [
     ListaComponent,

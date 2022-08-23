@@ -1,4 +1,4 @@
-<div class="card" style="margin-top: 20px">
+<div class="ui-g ui-md-12 ui-sm-12 card" style="margin-top: 20px">
 
   <p-table [value]="listaClientes" selectionMode="single" [(selection)]="selectedCliente" datakey="Id"
     [loading]="loading" [metaKeySelection]="false" responsiveLayout="scroll" (onRowSelect)="onRowSelect($event)"
@@ -13,7 +13,7 @@
         <ng-template pTemplate="right">
           <button pButton  label="Nuevo" icon="pi pi-plus" ></button>
           <button pButton pRipple label="Eliminar" icon="pi pi-trash"></button>
-          <button pButton pRipple label="Modificar" icon="pi pi-pencil"></button>
+          <button pButton pRipple label="Modificar" icon="pi pi-pencil"  (click)="edit(selectedCliente)" ></button>
           <!-- <i class="pi pi-bars"></i> -->
           <button pButton pRipple label="Dashboard" (click)="goDashboardCliente(selectedCliente)"  icon="pi pi-th-large"></button>
         </ng-template>

@@ -1,26 +1,28 @@
 ﻿<Properties StartupConfiguration="{BECC6228-17AD-4414-A29A-DCDC583B1793}|Default">
   <MultiItemStartupConfigurations />
   <Debugger.DebugSourceFolders />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="api/Program.cs">
+  <MonoDevelop.Ide.ItemProperties.api PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Dominio/Profile/ClienteProfile.cs">
     <Files>
-      <File FileName="Dominio/DTO/ClienteDTO.cs" Line="13" Column="35" />
+      <File FileName="Dominio/DTO/ClienteDTO.cs" Line="17" Column="6" />
       <File FileName="Dominio/Model/Extensions/Cliente.cs" Line="1" Column="1" />
       <File FileName="Dominio/Model/Cliente.cs" Line="1" Column="1" />
-      <File FileName="Dominio/Profile/ClienteProfile.cs" Line="27" Column="1" />
+      <File FileName="Dominio/Profile/ClienteProfile.cs" Line="21" Column="163" />
       <File FileName="Servicios/Implem/Servicio.cs" Line="50" Column="1" />
       <File FileName="Dominio/Impl/RepositorioBase.cs" Line="32" Column="1" />
       <File FileName="Dominio/Model/GestelWeb2014Context.cs" Line="544" Column="1" />
       <File FileName="api/Program.cs" Line="91" Column="1" />
       <File FileName="Dominio/Model/ArchivosImportado.cs" Line="17" Column="1" />
-      <File FileName="api/Controllers/ClienteController.cs" Line="47" Column="1" />
+      <File FileName="api/Controllers/ClienteController.cs" Line="39" Column="53" />
       <File FileName="Servicios/Contracts/IServicio.cs" Line="1" Column="1" />
       <File FileName="api/Controllers/DetalleEstadisticaController.cs" Line="45" Column="31" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
-          <Node name="ProyectoGestelWeb2022" expanded="True" selected="True">
+          <Node name="ProyectoGestelWeb2022" expanded="True">
             <Node name="api" expanded="True">
               <Node name="Controllers" expanded="True" />
               <Node name="Extensions" expanded="True" />
@@ -50,6 +52,4 @@
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.ItemProperties.api PreferredExecutionTarget="/Applications/Google Chrome.app" />
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
 </Properties>

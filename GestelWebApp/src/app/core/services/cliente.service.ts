@@ -25,6 +25,7 @@ export class ClienteService {
   }
 
   public get (id: string | null) : Observable<ICliente>  {
+    console.log("service " + id);
     return this.http.get <ICliente> (this.rootURL+ id);
   }
 }
